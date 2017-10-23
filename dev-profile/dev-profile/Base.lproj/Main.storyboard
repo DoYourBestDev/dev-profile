@@ -214,10 +214,13 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-T5-H3g">
-                                <rect key="frame" x="173" y="744" width="390" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ5-T5-H3g">
+                                <rect key="frame" x="209" y="745" width="350" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.31428185600990666" blue="0.21624874293862839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="b8D-5y-QjI"/>
+                                    <constraint firstAttribute="height" constant="50" id="ohQ-jd-3zh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Customize Dashboard">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,6 +233,7 @@
                             <constraint firstItem="7oQ-va-1fz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ii-Hq-DVs"/>
                             <constraint firstItem="cLE-nj-jiQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3WB-Wh-d0m"/>
                             <constraint firstItem="7oQ-va-1fz" firstAttribute="top" secondItem="s0k-P7-nBR" secondAttribute="bottom" constant="20" id="8mh-Qw-c7G"/>
+                            <constraint firstItem="CQ5-T5-H3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ITC-F3-wgA"/>
                             <constraint firstItem="s0k-P7-nBR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L6A-EP-yRT"/>
                             <constraint firstItem="MZN-gI-0RX" firstAttribute="centerY" secondItem="2eZ-ZN-0V8" secondAttribute="centerY" constant="25" id="PUc-QL-bBa"/>
                             <constraint firstItem="s0k-P7-nBR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XBn-JF-a4I"/>
@@ -239,6 +243,7 @@
                             <constraint firstItem="Gr7-sE-W21" firstAttribute="top" secondItem="cLE-nj-jiQ" secondAttribute="bottom" constant="20" id="fxn-Kt-ew4"/>
                             <constraint firstItem="cLE-nj-jiQ" firstAttribute="top" secondItem="2eZ-ZN-0V8" secondAttribute="bottom" constant="60" id="ge2-oJ-SlW"/>
                             <constraint firstItem="s0k-P7-nBR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i0m-dK-SXK"/>
+                            <constraint firstItem="CQ5-T5-H3g" firstAttribute="top" secondItem="Gr7-sE-W21" secondAttribute="bottom" constant="65" id="lZC-g2-lT6"/>
                             <constraint firstItem="2eZ-ZN-0V8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="m4K-qo-ZHz"/>
                             <constraint firstItem="Gr7-sE-W21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oLl-ra-saH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7oQ-va-1fz" secondAttribute="trailing" constant="20" id="pOc-qT-iGm"/>
@@ -250,8 +255,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="fW5-Te-tyF"/>
-                                <exclude reference="8mh-Qw-c7G"/>
                                 <exclude reference="ge2-oJ-SlW"/>
+                                <exclude reference="8mh-Qw-c7G"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -260,10 +265,10 @@
                                 <exclude reference="PUc-QL-bBa"/>
                                 <include reference="fW5-Te-tyF"/>
                                 <exclude reference="zpj-dO-sms"/>
+                                <include reference="ge2-oJ-SlW"/>
                                 <exclude reference="1Ii-Hq-DVs"/>
                                 <include reference="8mh-Qw-c7G"/>
                                 <exclude reference="tS2-ne-hFg"/>
-                                <include reference="ge2-oJ-SlW"/>
                             </mask>
                         </variation>
                     </view>
